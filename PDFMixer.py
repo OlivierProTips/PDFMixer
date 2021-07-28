@@ -29,10 +29,8 @@ pdfReader_impair = PyPDF2.PdfFileReader(pdfFileObj_1)
 pdfReader_pair = PyPDF2.PdfFileReader(pdfFileObj_2)
 
 nbPages = pdfReader_pair.numPages
-print(f"TOTAL: {nbPages}")
 
 for page in range(nbPages):
-    print(f"Current: {page}")
     pageObj = pdfReader_impair.getPage(page)
     pdfWriter.addPage(pageObj)
     pageObj = pdfReader_pair.getPage(nbPages - page - 1)
