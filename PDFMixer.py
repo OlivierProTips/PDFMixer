@@ -36,7 +36,7 @@ pdfFileObj_1 = open(args.odd, 'rb')
 pdfFileObj_2 = open(args.even, 'rb')
 pdfWriter = PyPDF2.PdfFileWriter()
 
-# Check if input files are pdf
+# Check if input files are pdf and can be opened
 try:
     pdfReader_impair = PyPDF2.PdfFileReader(pdfFileObj_1)
     pdfReader_pair = PyPDF2.PdfFileReader(pdfFileObj_2)
