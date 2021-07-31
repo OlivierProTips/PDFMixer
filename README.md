@@ -18,6 +18,12 @@ Case: when scanned with a printer that can handle multiple pages
 ## Requirements
 
 ```bash
+pip install -r requirements.txt
+```
+
+OR
+
+```bash
 pip install PyPDF2
 ```
 
